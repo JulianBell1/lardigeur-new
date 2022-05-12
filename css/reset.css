@@ -201,7 +201,7 @@ body > section {
 
 /*		PANEL THREE 5		*/
 
-.panelthree5 {
+.panelthree5, .panelJournal {
 	/* background: #1E2D35; */
 	padding: 15px 15%;
 	height: 900px;
@@ -209,13 +209,13 @@ body > section {
 
 
 
-.panelthree5 section {
+.panelthree5 section, .panelJournal section {
 	float: left;
 	width: 40%;
 	margin: 5% ;
 }
 
-.panelthree5 img {
+.panelthree5 img, .panelJournal img {
 	width: 65%;
 	/* padding: 0 5%; */
 	/* margin-left: 5%; */
@@ -224,11 +224,11 @@ body > section {
 	margin-bottom: 50px;
 }
 
-.panelthree5 h4 {
+.panelthree5 h4, .panelJournal h4{
 	color: white;
 }
 
-.panelthree5 p {
+.panelthree5 p, .panelJournal p {
 	margin: 25px 0;
 	line-height: 1.5em;
 	margin-bottom: 75px;
@@ -278,18 +278,7 @@ body > section {
     background-attachment: fixed;
     background-size: cover;
 }
-.parallaxScroll {
-    height: 25vh;
-    width: 100%;
-}
 
-/* ====================
-         PARALLAX  ABOUT
- =====================*/
- .parallaxWrapperAbout {
-    height: 50rem;
-    width: 100%;
-}
 .parallaxAbout {
     height: 100%;
     width: 100%;
@@ -297,10 +286,28 @@ body > section {
     background-attachment: fixed;
     background-size: cover;
 }
+
+.parallaxJournal {
+    height: 100%;
+    width: 100%;
+    background: url('aaron-burden-AXqMy8MSSdk-unsplash.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parallaxAfterhours {
+    height: 100%;
+    width: 100%;
+    background: url('a-n-v-e-s-h-ZxO7asSNhGo-unsplash.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .parallaxScroll {
     height: 25vh;
     width: 100%;
 }
+
 
 /*
 ===============================
