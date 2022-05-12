@@ -370,7 +370,7 @@ Primary Footer
 footer {
 	background: #283a49;
 	height: 250px;
-	border: 1px solid red;
+/* 	border: 1px solid red; */
 }
 
 .socialicons {
