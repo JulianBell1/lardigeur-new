@@ -83,10 +83,8 @@ p {
 /******************************
 		Layout
 ******************************/
-/* body {
-	width: 1080px;
-	margin-left: 10%;
-	margin-right: 10%;
+/* body *{
+	outline: 1px dotted red;
 } */
 
 /* header > *{
@@ -127,9 +125,11 @@ body > section {
 }
 	/*		PANEL TWO		*/
 
-.paneltwo p {
+.paneltwo p, .panelfour p {
 	margin: 25px 15%;
 	line-height: 1.5em;
+	font-weight: 300;
+	color:rgb(43, 41, 41);
 }
 
 .paneltwo {
@@ -142,10 +142,10 @@ body > section {
 
 	/*		PANEL THREE 	 */
 
-.panelthree h2 {
-	margin-top: 10%;
-	
+.panelthree h2, .panelthree5 h2, .panelJournal h2 {
+	margin-top: 5%;
 }
+
 
 
 .panelthree {
@@ -190,7 +190,7 @@ body > section {
 .panelthree p {
 	margin: 25px 0;
 	line-height: 1.5em;
-	margin-bottom: 10%;
+	/* margin-bottom: 10%; */
 	font-weight: 300;
 	color: rgb(43, 41, 41);
 }
@@ -201,7 +201,13 @@ body > section {
 
 /*		PANEL THREE 5		*/
 
-.panelthree5, .panelJournal {
+.panelthree5 {
+	/* background: #1E2D35; */
+	padding: 15px 15%;
+	height: 1050px;
+}
+
+.panelJournal {
 	/* background: #1E2D35; */
 	padding: 15px 15%;
 	height: 900px;
@@ -225,7 +231,7 @@ body > section {
 }
 
 .panelthree5 h4, .panelJournal h4{
-	color: white;
+	color: rgb(43, 41, 41);
 }
 
 .panelthree5 p, .panelJournal p {
@@ -264,9 +270,10 @@ body > section {
 }
 
 
-/* ====================
+/* ==========================================================
          PARALLAX 
- =====================*/
+ ===========================================================*/
+
  .parallaxWrapper {
     height: 50rem;
     width: 100%;
@@ -318,8 +325,8 @@ Primary Header
 */
 header {
 	height: 100px;
-	color: rgb(32, 32, 32);
-	background: /*#697c8c*/ white;
+	color: rgb(43, 41, 41);
+	/* background: /*#697c8c white; */
 	padding: 15px 50px;
 }
 
@@ -332,18 +339,24 @@ header {
 	font-weight: 700;
 }
 
-header img {
+/* header img {
 	position: relative;
 	margin: 0 15%;
 	clear: both;
-}
+} */
 
 header a + a {
 	padding-left: 25px;
 }
-header a {
-	color:rgb(32, 32, 32);
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 2.5rem;
 }
+
+
 
 /*
 ===============================
@@ -356,12 +369,13 @@ Primary Footer
 
 footer {
 	background: #283a49;
-	height: 200px;
+	height: 250px;
 	border: 1px solid red;
 }
 
 .socialicons {
-	margin-top: 1.5%;
+	margin-top: 3.5%;
+	float: left;
 }
 
 .socialicons img {
@@ -395,8 +409,9 @@ footer {
 
 .contact {
 	float: right;
-	margin-right: 2.5%;
+	margin: 1.5% 2.5% 1.5% 0;
 	width: 10%;
+	line-height: 1.5em;
 }
 
 .bottom {
@@ -407,6 +422,11 @@ footer {
 
 .bottom p {
 	margin-top: 1.5%;
+}
+
+.bottom a {
+	margin-top: 1.5%;
+	float: left;
 }
 
 .bottom span {
@@ -438,11 +458,17 @@ Typography
 =============================== 
 */
 body {
-	font-family: "Roboto", "Times New Romans", sans-serif;
+	font-family: "Cinzel", "Times New Romans", sans-serif;
 }
 
 header, h1, h2, h4, h6, a {
 	text-transform: uppercase;
+}
+
+.bottom a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
 }
 
 .panelone span {
@@ -461,7 +487,7 @@ p {
 }
 
 header a {
-	color: white;
+	color: rgb(43, 41, 41);
 	font-weight: 700;
 }
 
@@ -470,7 +496,7 @@ header a {
 	font-size: 75px;
 }
 
-.paneltwo h2, .panelthree h2 {
+.paneltwo h2, .panelthree h2, .panelthree5 h2, .panelJournal h2 {
 	font-weight: 500;
 	font-size: 50px;
 	color:rgb(43, 41, 41)
